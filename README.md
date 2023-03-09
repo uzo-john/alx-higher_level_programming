@@ -1,1 +1,1 @@
-First project on high level programming,python 
+First project on python hig level program
