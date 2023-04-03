@@ -54,10 +54,10 @@ class Rectangle:
         """return the printable string represtation
         of the rectangle
         """
-        string = ""
+        rectangle = ""
         if self.__width == 0 or self.__height == 0:
-            return string
+            return rectangle
         for i in range(self.__height):
             string += ("#" * self.__width) + "\n"
 
-        return string
+        return rectangle[:-1]
