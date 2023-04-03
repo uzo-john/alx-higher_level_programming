@@ -66,4 +66,4 @@ class Rectangle:
         """return a string representation of the rectangle
         to be able to recreate a new instance
         """
-        return rectangle({:a}, {:a}),.format(self.__width, self.__height)
+        return "rectangle({:a}, {:a})".format(self.__width, self.__height)
