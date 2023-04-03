@@ -49,6 +49,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((2 * self.__width) + (2 * self.__height))
+
     def __sef__(self):
         """return the printable string repretation of the rectangle
         with the #
@@ -56,6 +57,7 @@ class Rectangle:
 
         string = ""
         if self.__width = 0 and self.__height = 0:
-            for x in range(self.__height):
+            return string
+            for j in range(self.__height):
                 string += ("#" * self.__width) + "\n"
-        return string
+        return string[:-1]
