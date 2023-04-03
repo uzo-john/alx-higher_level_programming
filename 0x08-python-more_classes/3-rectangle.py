@@ -60,4 +60,4 @@ class Rectangle:
         for i in range(self.__height):
             string += ("#" * self.__width) + "\n"
 
-        return string[:-1]
+        return string
