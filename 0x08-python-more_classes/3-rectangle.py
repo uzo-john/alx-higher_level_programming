@@ -6,7 +6,7 @@ class Rectangle:
     """Represent a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """method Initialize a new Rectangle.
+        """Initialize a new Rectangle.
         Args:
             width (int): The width of the new rectangle.
             height (int): The height of the new rectangle.
@@ -16,7 +16,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """Get the width of the rectangle."""
+        """Get/set the width of the rectangle."""
         return self.__width
 
     @width.setter
@@ -29,14 +29,14 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get the height of the rectangle."""
+        """Get/set the height of the rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
-	if value < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
@@ -50,15 +50,15 @@ class Rectangle:
             return (0)
         return ((2 * self.__width) + (2 * self.__height))
 
-    def __str__(self):
-        """Return the printable representation of the Rectangle."""
+    def __sef__(self):
+        """return the printable string represtation
+        of the rectangle
+        """
+        rectangle = ""
         if self.__width == 0 or self.__height == 0:
-            return ("")
+            return rectangle
+        for j in range(self.__height):
+            rectangle += ("#" * self.__width) + "\n"
 
-        rect = []
-        for i in range(self.__height):
-            [rect.append('#') for j in range(self.__width)]
-            if i != self.__height - 1:
-                rect.append("\n")
-        return ("".join(rect))
+        return rectangle [:-1]
 
