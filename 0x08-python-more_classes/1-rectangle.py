@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """
-
 based on a class that defines a Rectangle
 
 """
@@ -20,13 +19,12 @@ class Rectangle:
     def width(self):
         """method that return the value of the width of the rectangle"""
 
-        return:
-		self.__width
+        return self.__width
 
     @width.setter
     def width(self, value):
 
-        """setter that set the width of the rectangle"""
+        """setter that define the width of the rectangle"""
 
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -42,9 +40,9 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """setter that set the hright of the rectangle"""
+        """setter that define the height of the rectangle"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.__height = value
+        self.__height = value`
