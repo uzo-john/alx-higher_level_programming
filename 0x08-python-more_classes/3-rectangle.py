@@ -50,7 +50,7 @@ class Rectangle:
             return (0)
         return ((2 * self.__width) + (2 * self.__height))
 
-    def __sef__(self):
+    def __str__(self):
         """return the printable string represtation
         of the rectangle
         """
