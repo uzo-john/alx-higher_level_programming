@@ -9,7 +9,7 @@ based on a class that defines a Rectangle
 class Rectangle:
     """class that define a rectangle"""
 
-    def __init__(self, height = 0, width = 0):
+    def __init__(self, width = 0, height = 0):
 
         """ method that Initializes the class rectangle"""
 
