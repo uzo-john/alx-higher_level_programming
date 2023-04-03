@@ -50,19 +50,10 @@ class Rectangle:
             return (0)
         return ((2 * self.__width) + (2 * self.__height))
 
-    def __sef__(self):
-        """return the printable string repretation of the rectangle
-        with the #
-        """
-
+    def __str__(self):
+        """returns printable string representation of the rectangle"""
         string = ""
-        if self.__width == 0 or self.__height == 0:
-
-            return ("")
-
-        rect = []
-        for i in range(self.__height):
-            [rect.append('#') for j in range(self.__width)]
-            if i != self.__height - 1:
-                rect.append("\n")
-        return ("".join(rect))
+        if self.__width != 0 and self.__height != 0:
+            string += "\n".join("#" * self.__width
+                                for j in range(self.__height))
+        return string
