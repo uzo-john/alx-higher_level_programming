@@ -2,8 +2,6 @@
 """
 
 based on a class that defines a Rectangle
-width: width of rectangle
-height: height of the rectangle
 
 """
 
