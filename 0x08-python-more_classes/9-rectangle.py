@@ -93,4 +93,4 @@ class Rectangle:
     def square(cls, size=0):
         """method that that returns a new Rectangle instance"""
 
-        return (cls(size, size))
+        return cls(size, size)
