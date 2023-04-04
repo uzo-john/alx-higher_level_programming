@@ -81,14 +81,11 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """method that print a big rectangel"""
-
-        if not isintance(rect_1, Rectangle):
-            raise typeError("rect_1 must be an instance of Rectangle")
-        if not isintance(rect_2, Rectangle):
-            raise typeError("rect_2 must be an instance of Rectangle")
-
+        """methodthat print a big rectangle"""
+        if type(rect_1) is not Rectangle:
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if type(rect_2) is not Rectangle:
+            raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
             return rect_1
-        else:
-            return rect_2
+        return rect_2
