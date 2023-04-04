@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 the N queens puzzle is the challenge of placing N non-attacking queens
-this program will solves the N quee
+this program will solves the queens problem
 """
 from sys import argv
 
