@@ -66,6 +66,6 @@ class Rectangle:
         """return a string representation of the rectangle
         to be able to reproduce a new instance
         """
-        rect = "rectangle(" + str(self.__width)
-        rect += ", " +str(self.__height) + ")"
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
         return (rect)
