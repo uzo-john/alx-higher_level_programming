@@ -3,7 +3,4 @@
 
 
 class LockedClass:
-    __slots__ = ['first_name']
-
-    def __init__(sef):
-        pass
+    __slots__ =['first_name']
