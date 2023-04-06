@@ -1,0 +1,17 @@
+def add_integer():
+	adding 1 and 2
+		add_integer(1, 2) == 3
+	subtracting 100 and 2
+		add_integer(100, -2) == 98
+	adding 2.1 and 98
+		add_integer(2.1, 98) == 100
+	subtracting 100.3 and 2
+		add_integer(100.3, 2) == 98
+	try:
+        	add_integer(2, "3")
+	except TypeError as e:
+        	assert str(e) == "b must be an integer"
+	try:
+        	add_integer("2", 3)
+    	except TypeError as e:
+        	assert str(e) == "a must be an integer"
