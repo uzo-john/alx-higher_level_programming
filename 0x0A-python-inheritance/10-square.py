@@ -8,8 +8,4 @@ class Square(Rectangle):
         """ initializes a Square """
         self.integer_validator("size", size)
         self.__size = size
-        super().__init__(self.__size, self.__size)
-
-    def area(self):
-        """ Method that returns a string with the area """
-        return super().area()
+        super().__init__(self.__size)
