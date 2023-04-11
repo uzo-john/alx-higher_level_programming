@@ -1,38 +1,19 @@
 #!/usr/bin/python3
-"""Defines a class Rectangle that inherits from BaseGeometry."""
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Rectangle(BaseGeometry):
-    """Represent a rectangle using BaseGeometry."""
-
-    def __init__(self, width, height):
-        """Intialize a new Rectangle. """
-        self.integer_validator("width", width)
-        self.__width = width
-        self.integer_validator("height", height)
-        self.__height = height
-
-    def area(self):
-        """To return the area of the rectangle."""
-        return self.__width * self.__height
-
-    def __str__(self):
-        """method that returns the printable string """
-        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
-
-   class Square(Rectangle):
-    """A representation of a square"""
+class Square(Rectangle):
+    """ Class that defines a Square from Rectangle class """
     def __init__(self, size):
-        """instantiation of the square"""
+        """ Method that initializes a Square """
         self.integer_validator("size", size)
         self.__size = size
-        super().__init__(size, size)
+        super().__init__(self.__size, self.__size)
 
     def area(self):
-        """"returns the area of the square"""
+        """ Method that returns a string with the area """
         return super().area()
 
     def __str__(self):
-        """informal string reepresentation of the square"""
-        return "[Square] {:d}/{:d}".format(self.__size, self.__size)
+        """ method that returns a printable string """
+        return "[Square] {}/{}".format(self.__size, self.__size)
